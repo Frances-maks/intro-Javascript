@@ -33,14 +33,29 @@
 //     console.log(extractKey(array, 'name'))
 
 // Assignment 3
-const letters = ["a","a","b","c","A"];
-    let target = "b";
+// filterLetters(["a","a","b","c","A"], "B")
 
-let counter = 0;
-for (letter of letters) {
-  if (letter == target) {
-        counter++;
-    }
-};
+// function filterLetters(arr,letter){
+//   let count = 0
+//   arr.filter(x => {
+//      if(x.toLowerCase() == letter.toLowerCase()){
+//     count++
+//   }
+// })
+// console.log(count);
+// }
 
-console.log(counter);
+// Assignment 4
+printFirstAndLast(['awesome','example','of','forEach']); 
+
+function printFirstAndLast (arr) {
+  
+    let newString = '';
+    
+    arr.forEach ( function (val) {
+      let newVal = val[val.length-1];
+      newString = val[0] + newVal;
+      console.log(newString);
+    });
+  }
+  
